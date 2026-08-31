@@ -1,0 +1,65 @@
+# ============================================================
+# AI Teacher — Python Dependencies
+# ============================================================
+
+# --- Core Framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+python-multipart==0.0.9
+
+# --- Database (PostgreSQL via Supabase) ---
+sqlalchemy[asyncio]==2.0.31
+asyncpg==0.29.0
+alembic==1.13.1
+
+# --- Validation & Settings ---
+pydantic==2.8.0
+pydantic-settings==2.4.0
+
+# --- Authentication ---
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# --- Document Processing ---
+PyPDF2==3.0.1
+python-docx==1.1.0
+python-pptx==0.6.23
+
+# --- HTTP Client ---
+httpx==0.27.0
+
+# --- Utilities ---
+python-dotenv==1.0.1
+aiofiles==24.1.0
+
+# --- Testing ---
+pytest==8.3.0
+pytest-asyncio==0.23.0
+
+# ============================================================
+# PLACEHOLDER — AI/ML Provider (to be configured later)
+# ============================================================
+# TODO: Uncomment and configure when LLM provider is selected.
+# openai==1.40.0
+# langchain==0.2.0
+# langchain-openai==0.1.0
+# google-generativeai==0.7.0
+
+# ============================================================
+# PLACEHOLDER — Vector Database (to be configured later)
+# ============================================================
+# TODO: Uncomment when vector DB provider is selected.
+# chromadb==0.5.0
+
+# ============================================================
+# PLACEHOLDER — TTS Provider (to be configured later)
+# ============================================================
+# TODO: Uncomment when TTS provider is selected (e.g., ElevenLabs).
+# elevenlabs==1.0.0
+# edge-tts==6.1.0
+
+# ============================================================
+# PLACEHOLDER — Avatar Provider (to be configured later)
+# ============================================================
+# TODO: Uncomment when avatar provider is selected (e.g., HeyGen, D-ID).
+# No specific Python SDK — uses httpx for REST API calls.
