@@ -1,6 +1,7 @@
 # Team 2 — AI Teacher / Lesson Agent Engineer
 
 ## Mission
+
 Build the brain that behaves like a teacher instead of a question-answer chatbot.
 
 ## Core Loop
@@ -13,6 +14,7 @@ Understand → Plan → Explain → Demonstrate
 ## Tasklist
 
 ### P0 — Learner Understanding
+
 - [ ] Read level.
 - [ ] Read existing knowledge.
 - [ ] Read goal.
@@ -22,6 +24,7 @@ Understand → Plan → Explain → Demonstrate
 - [ ] Read desired depth.
 
 ### P0 — Lesson Planning
+
 - [ ] Convert topic/material into concepts.
 - [ ] Identify prerequisites.
 - [ ] Order concepts logically.
@@ -32,7 +35,9 @@ Understand → Plan → Explain → Demonstrate
 - [ ] Produce structured `LessonPlan`.
 
 ### P0 — Teaching Agent
+
 Implement states:
+
 - [ ] Introduction
 - [ ] Explanation
 - [ ] Demonstration
@@ -43,36 +48,44 @@ Implement states:
 - [ ] Final assessment
 
 ### P0 — Personalization
+
 Beginner:
+
 - [ ] Simple language.
 - [ ] Analogies.
 - [ ] Fundamentals.
 
 Intermediate:
+
 - [ ] Technical terms.
 - [ ] Practical examples.
 
 Advanced:
+
 - [ ] Technical depth.
 - [ ] Mathematics/implementation where appropriate.
 
 ### P0 — Time Adaptation
+
 - [ ] 5-minute mode.
 - [ ] 20-minute mode.
 - [ ] 60-minute mode.
 - [ ] Multi-day plan mode.
 
 ### P0 — Language
+
 - [ ] Generate lesson in selected language.
 - [ ] Preserve context when language changes.
 - [ ] Support Hinglish if requested.
 
 ### P0 — RAG Integration
+
 - [ ] Retrieve relevant content for each concept.
 - [ ] Ground explanations when document mode is active.
 - [ ] Keep source metadata.
 
 ### P1
+
 - [ ] Teacher personality.
 - [ ] Follow-up conversation.
 - [ ] Exam mode.
@@ -91,6 +104,7 @@ Advanced:
 ```
 
 ## Decision Rules
+
 - Correct → continue or increase difficulty.
 - Incorrect → re-explain.
 - Repeated incorrect → simplify and retry.
@@ -98,6 +112,7 @@ Advanced:
 - Language changed → preserve state.
 
 ## Deliverables
+
 1. Lesson planner.
 2. Teacher state machine/graph.
 3. Prompt set.
@@ -107,4 +122,5 @@ Advanced:
 7. Example lesson outputs.
 
 ## Handoff
+
 Team 3 sends evaluation results back to this agent. Team 4 consumes lesson segments/scripts. Team 6 exposes the agent through APIs.

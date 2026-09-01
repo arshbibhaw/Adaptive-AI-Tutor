@@ -1,11 +1,13 @@
 # Team 6 — Backend, Database, Integration & Deployment Engineer
 
 ## Mission
+
 Make every module work as one reliable application and deploy it.
 
 ## Tasklist
 
 ### P0 — Backend
+
 - [x] Create FastAPI application.
 - [x] Configure CORS.
 - [x] Centralize configuration.
@@ -14,7 +16,9 @@ Make every module work as one reliable application and deploy it.
 - [x] Add logging.
 
 ### P0 — Database
+
 Create models/tables for:
+
 - [x] Users.
 - [x] Learner profiles.
 - [x] Documents.
@@ -26,7 +30,9 @@ Create models/tables for:
 - [x] Learning reports.
 
 ### P0 — Learner Profile
+
 Store:
+
 - [x] Level.
 - [x] Language.
 - [x] Goals.
@@ -36,7 +42,9 @@ Store:
 - [x] Learning history.
 
 ### P0 — API Layer
+
 Implement/coordinate:
+
 - [x] Document upload.
 - [x] Document outline.
 - [x] Session creation.
@@ -48,6 +56,7 @@ Implement/coordinate:
 - [x] Progress/report.
 
 ### P0 — Integration
+
 Connect:
 
 ```text
@@ -62,17 +71,20 @@ FastAPI
 ```
 
 ### P0 — File Storage
+
 - [ ] Store uploaded files safely.
 - [ ] Do not expose private files publicly by default.
 - [ ] Track processing status.
 - [ ] Handle cleanup.
 
 ### P0 — Authentication
+
 - [x] User registration/login or chosen auth provider.
 - [x] Protect user-specific data.
 - [x] Ensure one user cannot access another user's documents/progress.
 
 ### P0 — Deployment
+
 - [ ] Deploy backend.
 - [ ] Configure database.
 - [ ] Configure vector DB.
@@ -82,6 +94,7 @@ FastAPI
 - [ ] Test production flow.
 
 ### P1
+
 - [ ] Background job queue.
 - [ ] Redis/cache.
 - [ ] Rate limiting.
@@ -152,6 +165,7 @@ Progress still exists
 ```
 
 ## Deliverables
+
 1. Backend repository/module.
 2. Database schema/migrations.
 3. API documentation.
@@ -162,4 +176,5 @@ Progress still exists
 8. Final end-to-end demo environment.
 
 ## Final Responsibility
+
 Before submission, Team 6 coordinates with all teams and confirms that the complete system works from **student input to learning report**.

@@ -1,12 +1,15 @@
 # Team 3 — Interactive Assessment & Adaptive Learning Engineer
 
 ## Mission
+
 Make the AI Teacher respond intelligently to student performance.
 
 ## Tasklist
 
 ### P0 — Question Generation
+
 Generate:
+
 - [ ] MCQs.
 - [ ] Short answers.
 - [ ] Conceptual questions.
@@ -15,13 +18,16 @@ Generate:
 - [ ] Explain-in-your-own-words questions.
 
 Questions must match:
+
 - [ ] Concept.
 - [ ] Student level.
 - [ ] Lesson stage.
 - [ ] Language.
 
 ### P0 — Answer Evaluation
+
 Evaluate:
+
 - [ ] Correct.
 - [ ] Partially correct.
 - [ ] Incorrect.
@@ -31,14 +37,18 @@ Evaluate:
 Return score + explanation + confidence.
 
 ### P0 — Misconception Detection
+
 For incorrect answers:
+
 - [ ] Identify likely misconception.
 - [ ] Identify affected concept.
 - [ ] Select remediation strategy.
 - [ ] Avoid merely saying "wrong."
 
 ### P0 — Adaptive Response
+
 Possible actions:
+
 - [ ] Continue.
 - [ ] Increase difficulty.
 - [ ] Keep difficulty.
@@ -51,6 +61,7 @@ Possible actions:
 - [ ] Mark weak concept.
 
 ### P0 — Final Assessment
+
 - [ ] Generate final quiz.
 - [ ] Evaluate it.
 - [ ] Calculate score.
@@ -59,7 +70,9 @@ Possible actions:
 - [ ] Recommend next topic.
 
 ### P0 — Progress
+
 Track:
+
 - [ ] Attempts.
 - [ ] Mastery.
 - [ ] Weak concepts.
@@ -67,6 +80,7 @@ Track:
 - [ ] Misconceptions.
 
 ### P1
+
 - [ ] Spaced revision recommendations.
 - [ ] Personalized homework.
 - [ ] Flashcards.
@@ -97,6 +111,7 @@ Track:
 ```
 
 ## Critical Demo
+
 The system MUST demonstrate:
 
 ```text
@@ -112,6 +127,7 @@ Correct answer
 ```
 
 ## Deliverables
+
 1. Question generator.
 2. Evaluator.
 3. Misconception detector.
@@ -121,4 +137,5 @@ Correct answer
 7. Tests.
 
 ## Handoff
+
 Team 2 consumes `StudentEvaluation` to decide the next lesson state. Team 6 persists evaluations/progress. Team 5 displays them.

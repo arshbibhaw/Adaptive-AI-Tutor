@@ -1,14 +1,17 @@
 # Team 1 — RAG & Educational Material Engineer
 
 ## Mission
+
 Build the system that understands uploaded educational content and supplies reliable context to the AI Teacher.
 
 ## Priority
-**P0 = mandatory | P1 = important | P2 = optional**
+
+Legend: P0 = mandatory | P1 = important | P2 = optional
 
 ## Tasklist
 
 ### P0 — Document Input
+
 - [ ] Accept PDF.
 - [ ] Accept DOCX.
 - [ ] Accept PPTX.
@@ -18,6 +21,7 @@ Build the system that understands uploaded educational content and supplies reli
 - [ ] Store file metadata.
 
 ### P0 — Extraction
+
 - [ ] Extract text from PDF.
 - [ ] Extract paragraphs/headings from DOCX.
 - [ ] Extract slide text from PPTX.
@@ -26,7 +30,9 @@ Build the system that understands uploaded educational content and supplies reli
 - [ ] Handle extraction failures.
 
 ### P0 — Structure Detection
+
 Detect:
+
 - [ ] Chapters
 - [ ] Sections
 - [ ] Subsections
@@ -37,6 +43,7 @@ Detect:
 Create a document outline.
 
 ### P0 — RAG
+
 - [ ] Chunk extracted content.
 - [ ] Add metadata to every chunk.
 - [ ] Generate embeddings.
@@ -47,18 +54,21 @@ Create a document outline.
 - [ ] Prevent unrelated context from being returned.
 
 ### P0 — Grounding
+
 - [ ] Teacher Agent receives retrieved context.
 - [ ] Retrieved content includes source references.
 - [ ] Document mode should prefer source-grounded answers.
 - [ ] Do not invent missing document information.
 
 ### P1
+
 - [ ] Hybrid keyword + semantic retrieval.
 - [ ] Reranking.
 - [ ] OCR for scanned PDFs.
 - [ ] Automatic chapter summaries.
 
 ### P2
+
 - [ ] Image/table extraction.
 - [ ] Multimodal document understanding.
 
@@ -73,6 +83,7 @@ Create a document outline.
 `POST /retrieval/search`
 
 ### Retrieval response
+
 ```json
 {
   "query": "What is Ohm's Law?",
@@ -88,6 +99,7 @@ Create a document outline.
 ```
 
 ## Test Cases
+
 - [ ] Normal PDF.
 - [ ] Large PDF.
 - [ ] DOCX.
@@ -97,6 +109,7 @@ Create a document outline.
 - [ ] Query targeting a specific chapter.
 
 ## Deliverables
+
 1. Working ingestion pipeline.
 2. Vector DB collection/index.
 3. Retrieval API.
@@ -105,4 +118,5 @@ Create a document outline.
 6. Setup documentation.
 
 ## Handoff
+
 Team 2 consumes retrieval through the API. Team 6 integrates storage/API.

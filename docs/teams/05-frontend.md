@@ -1,12 +1,15 @@
 # Team 5 — Frontend / Student Experience Engineer
 
 ## Mission
+
 Build the complete student-facing interface for the AI Teacher.
 
 ## Tasklist
 
 ### P0 — Start Learning
+
 Create:
+
 - [ ] Topic input.
 - [ ] File upload.
 - [ ] Level selection.
@@ -16,13 +19,16 @@ Create:
 - [ ] Teaching style/depth.
 
 ### P0 — Material Screen
+
 - [ ] Show uploaded file.
 - [ ] Show document processing status.
 - [ ] Display chapter/section outline.
 - [ ] Allow chapter selection.
 
 ### P0 — Lesson Plan Screen
+
 Display:
+
 - [ ] Lesson title.
 - [ ] Concepts.
 - [ ] Estimated time.
@@ -31,7 +37,9 @@ Display:
 - [ ] Lesson sequence.
 
 ### P0 — Teaching Room
+
 Must show:
+
 - [ ] AI avatar/video.
 - [ ] Voice/video controls.
 - [ ] Current concept.
@@ -44,6 +52,7 @@ Must show:
 - [ ] Visible adaptation state.
 
 ### P0 — Assessment
+
 - [ ] Display questions.
 - [ ] Accept answers.
 - [ ] Submit.
@@ -51,7 +60,9 @@ Must show:
 - [ ] Show score.
 
 ### P0 — Learning Report
+
 Display:
+
 - [ ] Overall score.
 - [ ] Strong concepts.
 - [ ] Weak concepts.
@@ -60,12 +71,14 @@ Display:
 - [ ] Next topic.
 
 ### P0 — Progress
+
 - [ ] Learning history.
 - [ ] Topic progress.
 - [ ] Scores.
 - [ ] Current learning path.
 
 ### P1
+
 - [ ] Dark mode.
 - [ ] Accessibility controls.
 - [ ] Teacher personality selector.
@@ -73,6 +86,7 @@ Display:
 - [ ] Flashcards.
 
 ## Critical UX
+
 The judge should understand the product immediately.
 
 The adaptive moment should be obvious:
@@ -92,7 +106,9 @@ GET  /sessions/{id}/report
 ```
 
 ## UI States
+
 Handle:
+
 - [ ] Loading.
 - [ ] Processing.
 - [ ] Video generating.
@@ -102,6 +118,7 @@ Handle:
 - [ ] Invalid upload.
 
 ## Deliverables
+
 1. Complete UI.
 2. Responsive design.
 3. API integration.
@@ -110,4 +127,5 @@ Handle:
 6. Frontend tests where practical.
 
 ## Handoff
+
 Use Team 6 API contracts. Do not duplicate backend/AI logic in the frontend.

@@ -1,11 +1,13 @@
 # Team 4 — AI Teacher Video, Voice & Visual Engineer
 
 ## Mission
+
 Turn lesson segments into a convincing teaching video using an avatar, natural voice and useful visuals.
 
 ## Tasklist
 
 ### P0 — Voice
+
 - [ ] Integrate TTS.
 - [ ] Select natural voice.
 - [ ] Support target languages.
@@ -13,6 +15,7 @@ Turn lesson segments into a convincing teaching video using an avatar, natural v
 - [ ] Generate subtitles/transcript.
 
 ### P0 — Avatar
+
 - [ ] Integrate AI avatar provider.
 - [ ] Select teacher avatar.
 - [ ] Pass lesson script.
@@ -20,6 +23,7 @@ Turn lesson segments into a convincing teaching video using an avatar, natural v
 - [ ] Handle generation status/failure.
 
 ### P0 — Visuals
+
 Implement subject-aware visual selection:
 
 - [ ] Math → equations/graphs/steps.
@@ -30,6 +34,7 @@ Implement subject-aware visual selection:
 - [ ] AI/ML → architecture/graphs.
 
 ### P0 — Synchronization
+
 - [ ] Match visual duration to speech.
 - [ ] Show important text/equations while spoken.
 - [ ] Include subtitles.
@@ -54,12 +59,14 @@ Final video
 ```
 
 ### P1
+
 - [ ] Dynamic animations.
 - [ ] Interactive diagrams.
 - [ ] Multiple teacher personalities.
 - [ ] Real-time voice conversation.
 
 ### P2
+
 - [ ] Emotion-aware avatar.
 - [ ] Advanced subject simulations.
 
@@ -76,6 +83,7 @@ Final video
 ```
 
 ## Critical Requirement
+
 Do NOT make only:
 
 `Generated text → talking avatar`
@@ -83,6 +91,7 @@ Do NOT make only:
 The output must visibly contain meaningful educational visuals.
 
 ## Deliverables
+
 1. TTS integration.
 2. Avatar integration.
 3. Visual generation/selection.
@@ -93,4 +102,5 @@ The output must visibly contain meaningful educational visuals.
 8. Demo video segment.
 
 ## Handoff
+
 Team 2 provides lesson segments. Team 6 integrates the video service. Team 5 embeds the final video/status in the UI.
