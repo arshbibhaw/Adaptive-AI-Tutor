@@ -133,3 +133,41 @@ async def get_outline(
         id=doc.id, filename=doc.filename, outline=doc.outline,
         status=doc.status, chunk_count=doc.chunk_count,
     )
+
+
+@router.delete("/{document_id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_document(
+    document_id: str,
+    user_id: str = Depends(get_current_user_id),
+    db: AsyncSession = Depends(get_db),
+):
+    """Delete a document and clean up its files."""
+    result = await db.execute(
+        select(Document).where(Document.id == document_id, Document.user_id == user_id)
+    )
+    doc = result.scalar_one_or_none()
+    if not doc:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Document not found.")
+
+    import shutil
+    
+    # Delete file/directory
+    doc_dir = os.path.dirname(doc.file_path)
+    if os.path.exists(doc_dir) and document_id in doc_dir:
+        try:
+            shutil.rmtree(doc_dir)
+            logger.info("Deleted document directory: %s", doc_dir)
+        except Exception as e:
+            logger.error("Failed to delete document directory %s: %s", doc_dir, e)
+    elif os.path.exists(doc.file_path):
+        try:
+            os.remove(doc.file_path)
+            logger.info("Deleted document file: %s", doc.file_path)
+        except Exception as e:
+            logger.error("Failed to delete document file %s: %s", doc.file_path, e)
+
+    # Delete DB record
+    await db.delete(doc)
+    await db.flush()
+    logger.info("Deleted document record: %s", document_id)
+

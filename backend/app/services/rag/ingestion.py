@@ -45,9 +45,15 @@ async def save_upload(file_content: bytes, filename: str) -> tuple[str, str]:
     document_id = str(uuid.uuid4())
     ext = filename.rsplit(".", 1)[-1].lower()
     safe_filename = f"{document_id}.{ext}"
-    file_path = os.path.join(settings.UPLOAD_DIR, safe_filename)
+    
+    # Save to data/uploads/{document_id}/
+    doc_dir = os.path.join(settings.UPLOAD_DIR, document_id)
+    file_path = os.path.join(doc_dir, safe_filename)
 
-    os.makedirs(settings.UPLOAD_DIR, exist_ok=True)
+    # Ensure required directories exist
+    os.makedirs(doc_dir, exist_ok=True)
+    os.makedirs(settings.PROCESSED_DIR, exist_ok=True)
+
     with open(file_path, "wb") as f:
         f.write(file_content)
 
