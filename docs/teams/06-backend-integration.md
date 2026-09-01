@@ -6,12 +6,12 @@ Make every module work as one reliable application and deploy it.
 ## Tasklist
 
 ### P0 — Backend
-- [ ] Create FastAPI application.
-- [ ] Configure CORS.
-- [ ] Centralize configuration.
-- [ ] Add request validation.
-- [ ] Add error handling.
-- [ ] Add logging.
+- [x] Create FastAPI application.
+- [x] Configure CORS.
+- [x] Centralize configuration.
+- [x] Add request validation.
+- [x] Add error handling.
+- [x] Add logging.
 
 ### P0 — Database
 Create models/tables for:
@@ -37,15 +37,15 @@ Store:
 
 ### P0 — API Layer
 Implement/coordinate:
-- [ ] Document upload.
-- [ ] Document outline.
-- [ ] Session creation.
-- [ ] Lesson generation.
-- [ ] Answer submission.
-- [ ] Evaluation.
-- [ ] Video status.
-- [ ] Final assessment.
-- [ ] Progress/report.
+- [x] Document upload.
+- [x] Document outline.
+- [x] Session creation.
+- [x] Lesson generation.
+- [x] Answer submission.
+- [x] Evaluation.
+- [x] Video status.
+- [x] Final assessment.
+- [x] Progress/report.
 
 ### P0 — Integration
 Connect:
@@ -68,9 +68,9 @@ FastAPI
 - [ ] Handle cleanup.
 
 ### P0 — Authentication
-- [ ] User registration/login or chosen auth provider.
-- [ ] Protect user-specific data.
-- [ ] Ensure one user cannot access another user's documents/progress.
+- [x] User registration/login or chosen auth provider.
+- [x] Protect user-specific data.
+- [x] Ensure one user cannot access another user's documents/progress.
 
 ### P0 — Deployment
 - [ ] Deploy backend.
