@@ -27,6 +27,8 @@ class User(Base):
     )
 
     # Relationships
-    learner_profile = relationship("LearnerProfile", back_populates="user", uselist=False)
-    documents = relationship("Document", back_populates="user")
-    sessions = relationship("Session", back_populates="user")
+    learner_profile = relationship("LearnerProfile", back_populates="user", uselist=False, cascade="all, delete-orphan")
+    documents = relationship("Document", back_populates="user", cascade="all, delete-orphan")
+    sessions = relationship("Session", back_populates="user", cascade="all, delete-orphan")
+    progress = relationship("Progress", back_populates="user", cascade="all, delete-orphan")
+    learning_reports = relationship("LearningReport", back_populates="user", cascade="all, delete-orphan")

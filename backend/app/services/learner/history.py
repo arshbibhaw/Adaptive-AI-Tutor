@@ -100,7 +100,7 @@ async def record_interaction(
         misconception=misconception,
         confidence=confidence,
         next_action=next_action,
-        metadata=metadata,
+        extra_metadata=metadata,
     )
     db.add(interaction)
     await db.flush()

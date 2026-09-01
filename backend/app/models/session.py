@@ -44,6 +44,8 @@ class Session(Base):
 
     # Relationships
     user = relationship("User", back_populates="sessions")
-    interactions = relationship("Interaction", back_populates="session")
-    assessments = relationship("Assessment", back_populates="session")
-    progress = relationship("Progress", back_populates="session")
+    interactions = relationship("Interaction", back_populates="session", cascade="all, delete-orphan")
+    assessments = relationship("Assessment", back_populates="session", cascade="all, delete-orphan")
+    progress = relationship("Progress", back_populates="session", cascade="all, delete-orphan")
+    lesson_plan_record = relationship("LessonPlan", back_populates="session", uselist=False, cascade="all, delete-orphan")
+    learning_report = relationship("LearningReport", back_populates="session", uselist=False, cascade="all, delete-orphan")

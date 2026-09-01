@@ -15,25 +15,25 @@ Make every module work as one reliable application and deploy it.
 
 ### P0 — Database
 Create models/tables for:
-- [ ] Users.
-- [ ] Learner profiles.
-- [ ] Documents.
-- [ ] Sessions.
-- [ ] Lesson plans.
-- [ ] Interactions.
-- [ ] Assessments.
-- [ ] Progress.
-- [ ] Learning reports.
+- [x] Users.
+- [x] Learner profiles.
+- [x] Documents.
+- [x] Sessions.
+- [x] Lesson plans.
+- [x] Interactions.
+- [x] Assessments.
+- [x] Progress.
+- [x] Learning reports.
 
 ### P0 — Learner Profile
 Store:
-- [ ] Level.
-- [ ] Language.
-- [ ] Goals.
-- [ ] Preferences.
-- [ ] Strong concepts.
-- [ ] Weak concepts.
-- [ ] Learning history.
+- [x] Level.
+- [x] Language.
+- [x] Goals.
+- [x] Preferences.
+- [x] Strong concepts.
+- [x] Weak concepts.
+- [x] Learning history.
 
 ### P0 — API Layer
 Implement/coordinate:
