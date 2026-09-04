@@ -23,6 +23,7 @@ from backend.app.api.assessment import router as assessment_router
 from backend.app.api.video import router as video_router
 from backend.app.api.progress import router as progress_router
 from backend.app.api.learner import router as learner_router
+from backend.app.api.auth import router as auth_router
 
 
 logging.basicConfig(level=logging.INFO)
@@ -56,6 +57,7 @@ app.add_middleware(
 )
 
 # --- Routers ---
+app.include_router(auth_router, prefix="/api/auth", tags=["Auth"])
 app.include_router(documents_router, prefix="/api/documents", tags=["Documents"])
 app.include_router(sessions_router, prefix="/api/sessions", tags=["Sessions"])
 app.include_router(assessment_router, prefix="/api/assessment", tags=["Assessment"])

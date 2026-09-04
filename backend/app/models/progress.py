@@ -40,3 +40,4 @@ class Progress(Base):
 
     # Relationships
     session = relationship("Session", back_populates="progress")
+    user = relationship("User", back_populates="progress")
